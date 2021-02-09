@@ -62,7 +62,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "mutant:build"
+            "browserTarget": "mutant:build",
+            "proxyConfig":"proxy.conf.json"
           },
           "configurations": {
             "production": {
@@ -119,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "mutant"
+    }
+  },
+  "defaultProject": "mutant",
+  "cli": {
+    "analytics": "f68f53e7-fe38-4703-a041-1d452408810e"
+  }
 }
