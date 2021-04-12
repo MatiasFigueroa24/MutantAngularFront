@@ -9,16 +9,17 @@ import { ServiceService } from '../../Service/service.service';
   styleUrls: ['./list.component.css'],
 })
 export class ListComponent implements OnInit {
-  list: List[];
+  list: List;
   constructor(private service: ServiceService, private router: Router) {}
 
   ngOnInit() {
     this.service.getList().subscribe((data) => {
       this.list = data;
+      console.log(data)
+      console.log(this.list)
 
      
     });
-    this.service.getList().subscribe(res => this.list=res)
+  
   }
 }
-

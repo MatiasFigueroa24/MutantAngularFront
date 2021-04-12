@@ -1,42 +1,47 @@
 <div class="container">
-  <div class="card">
-    <div class="card-header card-light" style="background-color:#43c2ad;">
-      <h3>ADN</h3>
-    </div>
-    
-    <div class="card-body">
-     
-      <div class="card-group">
-        <div class="card">
-         
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text"></p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Humanos</small>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text"></p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Mutante</small>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text"></p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Radio</small>
-          </div>
-        </div>
-      </div>
-      
-    </div>
-  </div>
+	<div class="card">
+		<div class="card-header card-light" style="background-color:#43c2ad;">
+			<h3>ADN</h3>
+		</div>
+
+		<div class="card-body">
+			<div class="card-group">
+
+
+				<div class="card">
+					<div class="card-body">
+						<h1>
+							{{list. count_human_dna}}
+						</h1>
+					</div>
+					<div class="card-footer">
+						<small class="text-muted">humano</small>
+					</div>
+				</div>
+
+
+				<div class="card">
+					<div class="card-body">
+						<h1>
+							{{list.count_mutant_dna}}
+						</h1>
+					</div>
+					<div class="card-footer">
+						<small class="text-muted">Mutante</small>
+					</div>
+				</div>
+
+
+				<div class="card">
+					<div class="card-body">
+						<h1>{{list.ratio}}</h1>
+					</div>
+					<div class="card-footer">
+						<small class="text-muted">Radio</small>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
 </div>
